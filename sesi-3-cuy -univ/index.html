@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EkyGS ID</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">🎮 EkyGameShop</a>
+    <div class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Cari game..." id="searchInput" />
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero text-center text-white">
+    <h1>Top Up Voucher Game Favoritmu!</h1>
+    <p>Dapatkan voucher dengan harga terbaik dan proses cepat ⚡</p>
+  </header>
+
+  <!-- Produk Section -->
+  <div class="container mt-5">
+    <div class="row g-4">
+
+      <!-- Mobile Legends -->
+      <div class="col-md-4">
+        <div class="card game-card">
+          <img src="mlbb.jpg" class="card-img-top" alt="Mobile Legends">
+          <div class="card-body">
+            <h5 class="card-title">Mobile Legends</h5>
+            <p class="card-text">Top up diamond mulai dari Rp 5.000.</p>
+            <a href="https://wa.me/6285717632224?text=Halo,%20saya%20ingin%20beli%20diamond%20Mobile%20Legends"
+              class="btn btn-success" target="_blank">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Free Fire -->
+      <div class="col-md-4">
+        <div class="card game-card">
+          <img src="ff.jpg" class="card-img-top" alt="Free Fire">
+          <div class="card-body">
+            <h5 class="card-title">Free Fire</h5>
+            <p class="card-text">Top up diamond FF dari harga Rp 1000.</p>
+            <a href="https://wa.me/6285717632224?text=Halo%20saya%20ingin%20top%20up%20voucher%20game%20ini"
+              class="btn btn-success" target="_blank">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Genshin Impact -->
+      <div class="col-md-4">
+        <div class="card game-card">
+          <img src="genshin.jpg" class="card-img-top" alt="Genshin Impact">
+          <div class="card-body">
+            <h5 class="card-title">Genshin Impact</h5>
+            <p class="card-text">Genesis Crystals dan Blessing Rp 20.000.</p>
+            <a href="https://wa.me/6285717632224?text=Halo%20saya%20ingin%20top%20up%20voucher%20game%20ini"
+              class="btn btn-success" target="_blank">Pesan via WhatsApp</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Valorant -->
+      <div class="col-md-4">
+        <div class="card game-card">
+          <img src="valorant.jpg" class="card-img-top" alt="Valorant">
+          <div class="card-body">
+            <h5 class="card-title">Valorant</h5>
+            <p class="card-text">Top up valorant point mulai dari Rp 120.000.</p>
+            <a href="https://wa.me/6285717632224?text=Halo%20saya%20ingin%20top%20up%20voucher%20game%20ini"
+              class="btn btn-success" target="_blank">Pesan via WhatsApp</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PUBG Mobile -->
+      <div class="col-md-4">
+        <div class="card game-card">
+          <img src="pubgm.jpg" class="card-img-top" alt="PUBG Mobile">
+          <div class="card-body">
+            <h5 class="card-title">PUBG Mobile</h5>
+            <p class="card-text">Top up UC mulai dari Rp 70.000.</p>
+            <a href="https://wa.me/6285717632224?text=Halo%20saya%20ingin%20top%20up%20voucher%20game%20ini"
+              class="btn btn-success" target="_blank">Pesan via WhatsApp</a>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- PUBG -->
+      <div class="col-md-4">
+        <div class="card game-card">
+          <img src="pubg.jpg" class="card-img-top" alt="PUBG">
+          <div class="card-body">
+            <h5 class="card-title">PUBG</h5>
+            <p class="card-text">Top up UC mulai dari Rp 100.000.</p>
+            <a href="https://wa.me/6285717632224?text=Halo%20saya%20ingin%20top%20up%20voucher%20game%20ini"
+              class="btn btn-success" target="_blank">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center text-white py-4 mt-5">
+    &copy; 2025 GameVoucher ID. All rights reserved.
+    <br />
+    <a href="https://www.instagram.com/ekygameshop" target="_blank" class="text-white">Follow us on Instagram!</a>
+    <a href="https://www.youtube.com/@ekimuriandi" target="_blank" class="text-white">YouTube</a>
+  </footer>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('searchInput').addEventListener('input', function () {
+      const searchValue = this.value.toLowerCase();
+      const cards = document.querySelectorAll('.game-card');
+
+      cards.forEach(card => {
+        const title = card.querySelector('.card-title').textContent.toLowerCase();
+        if (title.includes(searchValue)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

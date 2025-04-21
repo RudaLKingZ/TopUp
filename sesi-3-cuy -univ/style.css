@@ -1,0 +1,78 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-image: url('background1.jpg');
+    background-size: cover;
+    /* Menutupi seluruh layar */
+    background-position: center;
+    /* Tengah-tengah layar */
+    background-attachment: fixed;
+    /* Tetap di tempat saat scroll */
+    background-repeat: no-repeat;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(20, 20, 40);
+    box-shadow: 0 0 10px #00ffc3;
+}
+
+.hero {
+    background: radial-gradient(circle at center, #00ffc3 0%, #0f0f1a 100%);
+    padding: 60px 20px;
+    text-shadow: 0 0 10px #00ffc3;
+}
+
+.card {
+    background-color: #463e3e; /* abu-abu muda */
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* bayangan halus */
+    transition: transform 0.2s ease;
+  }
+  
+.card:hover {
+    transform: scale(1.03); /* efek hover biar lebih interaktif */
+  }
+  
+
+.card-title {
+    color: #00ffc3;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #00ffc3;
+    border: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #00bfa0;
+    color: #fff;
+}
+
+footer {
+    background-color: #121212;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-img-top {
+    height: 200px;
+    /* Atur tinggi gambar */
+    object-fit: cover;
+    /* Potong gambar agar pas tanpa melar */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.game-card {
+    transition: all 0.3s ease;
+  }
+  
