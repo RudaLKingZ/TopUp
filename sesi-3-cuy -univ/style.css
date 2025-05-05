@@ -1,78 +1,148 @@
+/* Global Styles */
 body {
     font-family: 'Orbitron', sans-serif;
-    background-image: url('background1.jpg');
+    background-image: url('background2.jpg');
     background-size: cover;
-    /* Menutupi seluruh layar */
     background-position: center;
-    /* Tengah-tengah layar */
     background-attachment: fixed;
-    /* Tetap di tempat saat scroll */
     background-repeat: no-repeat;
     color: #f1f1f1;
     margin: 0;
     padding: 0;
-}
-
-.navbar {
+  }
+  
+  /* Navbar */
+  .navbar {
     background-color: rgb(20, 20, 40);
     box-shadow: 0 0 10px #00ffc3;
-}
-
-.hero {
+  }
+  
+  /* Hero Section */
+  .hero {
     background: radial-gradient(circle at center, #00ffc3 0%, #0f0f1a 100%);
     padding: 60px 20px;
     text-shadow: 0 0 10px #00ffc3;
-}
-
-.card {
-    background-color: #463e3e; /* abu-abu muda */
+    font-family: 'Orbitron', sans-serif;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero p {
+    font-size: 1.2rem;
+  }
+  
+  /* Game Card */
+  .card {
+    background-color: #463e3e;
     border: none;
     border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* bayangan halus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
   }
-  
-.card:hover {
-    transform: scale(1.03); /* efek hover biar lebih interaktif */
+  .card:hover {
+    transform: scale(1.03);
   }
-  
-
-.card-title {
+  .card-title {
     color: #00ffc3;
     font-weight: bold;
-}
-
-.btn-primary {
+  }
+  .card img, .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  /* Button */
+  .btn-primary {
     background-color: #00ffc3;
     border: none;
     color: #000;
     font-weight: bold;
-}
-
-.btn-primary:hover {
+  }
+  .btn-primary:hover {
     background-color: #00bfa0;
     color: #fff;
-}
-
-footer {
+  }
+  .btn-light {
+    background-color: #00cc99;
+    color: white;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  .btn-light:hover {
+    background-color: #00ff99;
+  }
+  
+  /* Footer */
+  footer {
     background-color: #121212;
-}
-
-.card img {
+  }
+  
+  /* About Me Section */
+  .about-me {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    border-top: 2px solid #666;
+    border-bottom: 2px solid #666;
+  }
+  .about-me h2 {
+    color: #00ffc3;
+  }
+  .about-me p {
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Hubungi Kami Page */
+  header {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 200px;
-    object-fit: cover;
-}
-
-.card-img-top {
-    height: 200px;
-    /* Atur tinggi gambar */
-    object-fit: cover;
-    /* Potong gambar agar pas tanpa melar */
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-}
-
-.game-card {
-    transition: all 0.3s ease;
+    border-bottom: 3px solid #00ff99;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .container {
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+  ul li a {
+    color: #00ffff;
+    text-decoration: none;
+  }
+  ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    .container {
+      padding: 20px;
+    }
   }
   
